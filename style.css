@@ -2,6 +2,10 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+a{
+    color: #f6f2f1;
+    text-decoration: none;
+}
 h1 {
     font-weight: 800;
 }
@@ -66,8 +70,20 @@ hr {
     border-radius: 4px;
     margin-top: 75px;
 }
-#contact-button:focus {
-    outline: none;
+#contact-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#contact-button:hover{
+    color: #ff3f40;
+    background-color: white;
+    border: 2px solid #ff3f40
+}
+#contact-button:hover a{
+    color: #ff3f40;
+    font-weight: 600;
 }
 .home-content-right {
     display: flex;
@@ -76,12 +92,31 @@ hr {
     padding-top: 25px;
     margin-left: 50px;
 }
+.back-to-top{
+    position: fixed;
+    bottom: 80px;
+    left: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #e9ebec;
+    color: #312f30;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+}
+.back-to-top:hover{
+    color: #f6f2f1;
+    background: #312f30;
+}
+.back-to-top-show{
+    display: block;
+}
 .services {
     display: flex;
     margin-top: 25px;
-}
-#services-description {
-    color: black;
 }
 .services-left {
     width: 50%;
@@ -89,15 +124,21 @@ hr {
 }
 #learn-more {
     color: #ff3f40;
-    background-color: #f6f2f1;
+    background-color: white;
     border: 2px solid #ff3f40;
     width: 130px;
     height: 30px;
     border-radius: 4px;
     margin-top: 30px;
+    cursor: pointer;
+    font-weight: 600;
 }
 #learn-more:focus {
     outline: none;
+}
+#learn-more:hover{
+    color: white;
+    background-color: #ff3f40;
 }
 .services-right {
     width: 50%;
@@ -220,9 +261,6 @@ hr {
     padding-left: 25px;
     /*font-size: 11px;*/
 }
-#subscribe-email::placeholder{
-    /*font-size: 11px;*/
-}
 #subscribe-button{
     background-color: #ff3f40;
     color: #f6f2f1;
@@ -231,7 +269,12 @@ hr {
     width: 140px;
     height: 43px;
     border-radius: 4px;
-    /*font-size: 11px;*/
+}
+#subscribe-button:hover{
+    color: #ff3f40;
+    background-color: white;
+    border: 2px solid #ff3f40;
+    font-weight: 600;
 }
 .contacts{
     padding-right: 0;
@@ -246,12 +289,12 @@ hr {
     width: 60%;
     margin-right: 5%;
 }
-.input-field{
+.contacts-text{
+    font-family: 'Open Sans', sans-serif;
     color: #312f30;
     background-color: #f6f2f1;
     border: none;
     border-radius: 7px;
-    /*font-size: 11px;*/
     padding-left: 4%;
 }
 #contacts-name{
@@ -259,18 +302,16 @@ hr {
     height: 35px;
 }
 #contacts-email{
-    width: 40%;
+    width: 41%;
     height: 35px;
-    margin-left: 11%;
+    margin-left: 10%;
 }
 #contacts-message{
+    font-family: 'Open Sans', sans-serif;
     width: 96%;
-    padding-bottom: 150px;
     margin-top: 30px;
-    padding-top: 15px;
-}
-#contacts-message::placeholder{
-    text-align: start;
+    padding-top: 2%;
+    resize: none;
 }
 #send-message-button{
     margin-top: 30px;
@@ -281,7 +322,12 @@ hr {
     width: 100%;
     height: 43px;
     border-radius: 5px;
-    /*font-size: 11px;*/
+}
+#send-message-button:hover{
+    color: #ff3f40;
+    background-color: white;
+    border: 2px solid #ff3f40;
+    font-weight: 600;
 }
 .contact-info{
     background-color: #312f30;
