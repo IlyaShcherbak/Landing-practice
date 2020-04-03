@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <a class="back-to-top" title="UP">&uarr;</a>
+    <a class="back-to-top" title="Go to Top">&uarr;</a>
     <div class="section services">
         <div class="services-left">
             <h2>DO YOU KNOW WE CAN PROVIDE FOR YOU?</h2>
@@ -42,25 +42,25 @@
         </div>
         <div class="services-right">
             <div>
-                <img src="assets/setting.png" class="logo"/>
+                <img src="assets/services/settings.svg" class="logo"/>
                 <h3>Management</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Facilisis volutpat est velit egestas.</p>
             </div>
             <div>
-                <img src="assets/diamond.png" class="logo"/>
+                <img src="assets/services/diamond.svg" class="logo"/>
                 <h3>Logo / Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. </p>
             </div>
             <div>
-                <img src="assets/pencil.png" class="logo"/>
+                <img src="assets/services/pencil.svg" class="logo"/>
                 <h3>UI /UX Design</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua.</p>
             </div>
             <div>
-                <img src="assets/truck1.png" class="logo"/>
+                <img src="assets/services/truck.svg" class="logo"/>
                 <h3>Animation</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua.</p>
@@ -75,13 +75,15 @@
             </div>
             <div class="modal-body">
                 <div id="modal-body-header">
-                    <h3 id="modal-management" class="modal-tab">Management</h3>
-                    <h3 id="modal-branding" class="modal-tab">Logo / Branding</h3>
-                    <h3 id="modal-design" class="modal-tab">UI /UX Design</h3>
-                    <h3 id="modal-animation" class="modal-tab">Animation</h3>
+                    <div class="modal-tab">
+                        <h3 id="modal-management" class="modal-tab-header">Management</h3>
+                    </div>
+                    <div class="modal-tab"><h3 id="modal-branding" class="modal-tab-header">Logo / Branding</h3></div>
+                    <div class="modal-tab"><h3 id="modal-design" class="modal-tab-header">UI /UX Design</h3></div>
+                    <div class="modal-tab"><h3 id="modal-animation" class="modal-tab-header">Animation</h3></div>
                 </div>
                 <div id="modal-body-content">
-                    <p id="modal-management-text">1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p id="modal-management-text" class="modal-tab-text">1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamcomlaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -97,14 +99,14 @@
                         vehicula ligula id nibh efficitur, sed commodo ligula tincidunt. Suspendisse potenti. Quisque
                         tincidunt nibh nec felis pellentesque accumsan. Pellentesque feugiat porttitor sem a ultricies.
                     </p>
-                    <p id="modal-branding-text">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p id="modal-branding-text" class="modal-tab-text">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamcomlaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                         anim id est laborum.
                     </p>
-                    <p id="modal-design-text">3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p id="modal-design-text" class="modal-tab-text">3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamcomlaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -124,7 +126,7 @@
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                         anim id est laborum.
                     </p>
-                    <p id="modal-animation-text">4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    <p id="modal-animation-text" class="modal-tab-text">4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamcomlaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -151,21 +153,21 @@
         </div>
         <div class="products-lower">
             <div class="product-list">
-                <h3>All</h3>
-                <h3>PRINT TEMPLATE</h3>
-                <h3>WEB TEMPLATE</h3>
-                <h3>USER INTERFACE</h3>
-                <h3>MOCK-UP</h3>
+                <h3 class="product-list-items">All</h3>
+                <h3 class="product-list-items">PRINT TEMPLATE</h3>
+                <h3 class="product-list-items">WEB TEMPLATE</h3>
+                <h3 class="product-list-items">USER INTERFACE</h3>
+                <h3 class="product-list-items">MOCK-UP</h3>
             </div>
             <div class="product-pics">
-                <img class="product-images" src="assets/pic1.jpg"/>
-                <img class="product-images" src="assets/pic2.jpg"/>
-                <img class="product-images" src="assets/pic3.jpg"/>
-                <img class="product-images" src="assets/pic4.jpg"/>
-                <img class="product-images" src="assets/pic5.jpg"/>
-                <img class="product-images" src="assets/pic6.jpg"/>
-                <img class="product-images" src="assets/pic7.jpg"/>
-                <img class="product-images" src="assets/pic8.jpg"/>
+                <img class="product-images" src="assets/products/pic1.jpg"/>
+                <img class="product-images" src="assets/products/pic2.jpg"/>
+                <img class="product-images" src="assets/products/pic3.jpg"/>
+                <img class="product-images" src="assets/products/pic4.jpg"/>
+                <img class="product-images" src="assets/products/pic5.jpg"/>
+                <img class="product-images" src="assets/products/pic6.jpg"/>
+                <img class="product-images" src="assets/products/pic7.jpg"/>
+                <img class="product-images" src="assets/products/pic8.jpg"/>
             </div>
         </div>
     </div>
@@ -177,32 +179,32 @@
             <hr class="red-line left">
         </div>
         <div class="team-lower">
-            <img class="team-main-photo" src="assets/photo1.jpg"/>
+            <img class="team-main-photo" src="assets/team-photo/photo1.jpg"/>
             <div>
                 <h3>Mark Tauler</h3>
                 <p id="person-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio magna, iaculis pretium
                     feugiat sit amet, fringilla eu ex. Aenean dignissim mi non volutpat faucibus.</p>
                 <div class="team-social-networks">
-                    <p class="team-networks-links"><i>Facebook</i></p>
-                    <p class="team-networks-links"><i>Twiter</i></p>
-                    <p class="team-networks-links"><i>Instagram</i></p>
-                    <p class="team-networks-links"><i>LinkedIn</i></p>
+                    <a href="https://uk-ua.facebook.com/" target="_blank"><p class="team-networks-links"><i>Facebook</i></p></a>
+                    <a href="https://twitter.com/explore" target="_blank"><p class="team-networks-links"><i>Twiter</i></p></a>
+                    <a href="https://www.instagram.com/" target="_blank"><p class="team-networks-links"><i>Instagram</i></p></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><p class="team-networks-links"><i>LinkedIn</i></p></a>
                 </div>
                 <div class="team-photo-name">
                     <div class="team-photo-how">
-                        <img class="team-photo" src="assets/photo2.jpg"/>
+                        <img class="team-photo" src="assets/team-photo/photo2.jpg"/>
                         <div class="name">Taras Shevchenko</div>
                     </div>
                     <div class="team-photo-how">
-                        <img class="team-photo" src="assets/photo3.jpg"/>
+                        <img class="team-photo" src="assets/team-photo/photo3.jpg"/>
                         <div class="name">Mark Waller</div>
                     </div>
                     <div class="team-photo-how">
-                        <img class="team-photo" src="assets/photo4.jpg"/>
+                        <img class="team-photo" src="assets/team-photo/photo4.jpg"/>
                         <div class="name">Anna Mure</div>
                     </div>
                     <div class="team-photo-how">
-                        <img class="team-photo" src="assets/photo5.jpg"/>
+                        <img class="team-photo" src="assets/team-photo/photo5.jpg"/>
                         <div class="name">Nick Klowskiy</div>
                     </div>
                 </div>
@@ -243,10 +245,10 @@
     <div class="section footer">
         <p>@Copyright @junaed 2016, All rights reserved.</p>
         <div>
-            <img class="footer-social-networks" src="assets/twitter-icon.png"/>
-            <img class="footer-social-networks" src="assets/fb-icon.png"/>
-            <img class="footer-social-networks" src="assets/in-icon.png"/>
-            <img class="footer-social-networks" src="assets/instagram-icon.png" />
+            <a href="https://twitter.com/explore" target="_blank"><img class="footer-social-networks" src="assets/footer/twitter-icon.png"/></a>
+            <a href="https://uk-ua.facebook.com/" target="_blank"><img class="footer-social-networks" src="assets/footer/fb-icon.png"/></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="footer-social-networks" src="assets/footer/in-icon.png"/></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="footer-social-networks" src="assets/footer/instagram-icon.png"/></a>
         </div>
     </div>
 

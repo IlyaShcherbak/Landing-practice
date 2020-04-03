@@ -1,80 +1,82 @@
 //back to top button
+const goToBtn = document.querySelector('.back-to-top');
 (function () {
-    'use strict';
 
     function trackScroll() {
-        let scrolled = window.pageYOffset;
-        let coords = document.documentElement.clientHeight;
+        const scrolled = window.pageYOffset;
+        const coords = document.documentElement.clientHeight;
 
-        if (scrolled>coords){
+        if (scrolled > coords){
             goToBtn.classList.add('back-to-top-show');
         }
-        if (coords>scrolled){
+        if (coords > scrolled){
             goToBtn.classList.remove('back-to-top-show');
         }
     }
 
     function backToTop() {
-        if (window.pageYOffset>0){
+        if (window.pageYOffset > 0){
             window.scrollBy(0, -70);
             setTimeout(backToTop, 10);
         }
     }
-
-    let goToBtn = document.querySelector('.back-to-top');
 
     window.addEventListener('scroll', trackScroll);
     goToBtn.addEventListener('click', backToTop);
 })();
 
 //modal window
-let modal = document.getElementById('modal-window');
-let btn = document.getElementById('learn-more-button');
-let close = document.getElementById('modal-close');
+const modal = document.getElementById('modal-window');
+const btn = document.getElementById('learn-more-button');
+const close = document.getElementById('modal-close');
 const body = document.body;
 
 btn.onclick = function() {
     body.style.overflowY = 'hidden';
     modal.style.display = "block";
+    goToBtn.style.display = "none";
 };
 
 close.onclick = function() {
     body.style.overflowY = 'auto';
     modal.style.display = "none";
+    goToBtn.style.display = "block";
 };
 
-let mManagement = document.getElementById('modal-management');
-let mBranding = document.getElementById('modal-branding');
-let mDesign = document.getElementById('modal-design');
-let mAnimation = document.getElementById('modal-animation');
+const mManagement = document.getElementById('modal-management');
+const mBranding = document.getElementById('modal-branding');
+const mDesign = document.getElementById('modal-design');
+const mAnimation = document.getElementById('modal-animation');
 
-let mManagementText = document.getElementById('modal-management-text');
-let mBrandingText = document.getElementById('modal-branding-text');
-let mDesignText = document.getElementById('modal-design-text');
-let mAnimationText = document.getElementById('modal-animation-text');
+const mManagementText = document.getElementById('modal-management-text');
+const mBrandingText = document.getElementById('modal-branding-text');
+const mDesignText = document.getElementById('modal-design-text');
+const mAnimationText = document.getElementById('modal-animation-text');
 
-mManagement.onclick = function() {
-    mManagementText.style.display = 'block';
-    mBrandingText.style.display = 'none';
-    mDesignText.style.display = 'none';
-    mAnimationText.style.display = 'none';
-};
+// function generateTabs() {
+//     const tabNames = ['management', 'branding', 'design', 'animation'];
+//
+//     return tabNames.map((tabName) => ({
+//         tabHeader: document.getElementById(`modal-${tabName}`),
+//         tabContent: document.getElementById(`modal-${tabName}-text`)
+//     }));
+// }
 
-mBranding.onclick = function() {
-    mManagementText.style.display = 'none';
-    mBrandingText.style.display = 'block';
-    mDesignText.style.display = 'none';
-    mAnimationText.style.display = 'none';
-};
-mDesign.onclick = function() {
-    mManagementText.style.display = 'none';
-    mBrandingText.style.display = 'none';
-    mDesignText.style.display = 'block';
-    mAnimationText.style.display = 'none';
-};
-mAnimation.onclick = function() {
-    mManagementText.style.display = 'none';
-    mBrandingText.style.display = 'none';
-    mDesignText.style.display = 'none';
-    mAnimationText.style.display = 'block';
-};
+// const tabs = generateTabs();
+
+const tabs = [
+    {tabHeader: mManagement, tabContent: mManagementText},
+    {tabHeader: mBranding, tabContent: mBrandingText},
+    {tabHeader: mDesign, tabContent: mDesignText},
+    {tabHeader: mAnimation, tabContent: mAnimationText}
+];
+
+tabs.forEach(({tabHeader}, tabIndex) => {
+    tabHeader.onclick = function() {
+        tabs.forEach(({tabContent}, contentIndex) =>
+            contentIndex === tabIndex
+                ? tabContent.style.display = 'block'
+                : tabContent.style.display = 'none'
+        )
+    };
+});
