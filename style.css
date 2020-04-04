@@ -156,7 +156,6 @@ button{
     left: 0;
     top: 0;
     background-color: rgba(0,0,0,0.95);
-    overflow: auto;
 }
 .modal-content{
     position: relative;

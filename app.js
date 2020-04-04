@@ -1,7 +1,6 @@
 //back to top button
 const goToBtn = document.querySelector('.back-to-top');
 (function () {
-
     function trackScroll() {
         const scrolled = window.pageYOffset;
         const coords = document.documentElement.clientHeight;
@@ -36,13 +35,24 @@ btn.onclick = function() {
     modal.style.display = "block";
     goToBtn.style.display = "none";
 };
-
-close.onclick = function() {
+function closeModal(){
     body.style.overflowY = 'auto';
     modal.style.display = "none";
     goToBtn.style.display = "block";
+}
+close.onclick = closeModal;
+
+modal.onclick = function(event) {
+    if (event.target === modal) {
+        body.style.overflowY = 'auto';
+        modal.style.display = "none";
+        goToBtn.style.display = "block";
+    }
 };
 
+
+
+//modal tabs
 const mManagement = document.getElementById('modal-management');
 const mBranding = document.getElementById('modal-branding');
 const mDesign = document.getElementById('modal-design');
