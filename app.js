@@ -50,8 +50,6 @@ modal.onclick = function(event) {
     }
 };
 
-
-
 //modal tabs
 const mManagement = document.getElementById('modal-management');
 const mBranding = document.getElementById('modal-branding');

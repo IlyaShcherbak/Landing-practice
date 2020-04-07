@@ -268,14 +268,33 @@ button{
     display: flex;
     margin-bottom: 35px;
 }
+.team-social-networks-items{
+    position: relative;
+    margin-right: 35px;
+}
 .team-networks-links{
     margin-bottom: 0;
     margin-top: 0;
-    margin-right: 20px;
     color: #928c88;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #928c88;
 }
 .team-networks-links:hover{
-    text-decoration: underline;
+    text-decoration: none;
+}
+.animation:after{
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ff3f40;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.animation:hover:after {
+    width: 100%;
+    left: 0;
 }
 .team-main-photo{
     width: 210px;
