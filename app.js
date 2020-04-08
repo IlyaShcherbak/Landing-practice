@@ -88,3 +88,79 @@ tabs.forEach(({tabHeader}, tabIndex) => {
         )
     };
 });
+
+//product tabs
+const tabAll = document.getElementById('product-list-all');
+const tabPrintTemplate = document.getElementById('product-list-print-template');
+const tabWebTemplate = document.getElementById('product-list-web-template');
+const tabUserInterface = document.getElementById('product-list-user-interface');
+const tabMockUp = document.getElementById('product-list-mock-up');
+
+const img1 = document.getElementById('print-template-1');
+const img2 = document.getElementById('print-template-2');
+const img3 = document.getElementById('web-template-1');
+const img4 = document.getElementById('web-template-2');
+const img5 = document.getElementById('user-interface-1');
+const img6 = document.getElementById('user-interface-2');
+const img7 = document.getElementById('mock-up-1');
+const img8 = document.getElementById('mock-up-2');
+
+// const productTabs = [
+// //     {tabName: tabAll, tabElements:[img1, img2, img3, img4, img5, img6, img7, img8]},
+// //     {tabName: tabPrintTemplate, tabElements:[img1, img2]},
+// //     {tabName: tabWebTemplate, tabElements:[img3, img4]},
+// //     {tabName: tabUserInterface, tabElements:[img5, img6]},
+// //     {tabName: tabMockUp, tabElements:[img7, img8]},
+// // // ];
+
+tabAll.onclick = function(){
+    img1.style.display = 'block';
+    img2.style.display = 'block';
+    img3.style.display = 'block';
+    img4.style.display = 'block';
+    img5.style.display = 'block';
+    img6.style.display = 'block';
+    img7.style.display = 'block';
+    img8.style.display = 'block';
+};
+
+tabPrintTemplate.onclick = function(){
+    img1.style.display = 'block';
+    img2.style.display = 'block';
+    img3.style.display = 'none';
+    img4.style.display = 'none';
+    img5.style.display = 'none';
+    img6.style.display = 'none';
+    img7.style.display = 'none';
+    img8.style.display = 'none';
+};
+tabWebTemplate.onclick = function(){
+    img1.style.display = 'none';
+    img2.style.display = 'none';
+    img3.style.display = 'block';
+    img4.style.display = 'block';
+    img5.style.display = 'none';
+    img6.style.display = 'none';
+    img7.style.display = 'none';
+    img8.style.display = 'none';
+};
+tabUserInterface.onclick = function(){
+    img1.style.display = 'none';
+    img2.style.display = 'none';
+    img3.style.display = 'none';
+    img4.style.display = 'none';
+    img5.style.display = 'block';
+    img6.style.display = 'block';
+    img7.style.display = 'none';
+    img8.style.display = 'none';
+};
+tabMockUp.onclick = function(){
+    img1.style.display = 'none';
+    img2.style.display = 'none';
+    img3.style.display = 'none';
+    img4.style.display = 'none';
+    img5.style.display = 'none';
+    img6.style.display = 'none';
+    img7.style.display = 'block';
+    img8.style.display = 'block';
+};

@@ -192,18 +192,18 @@ button{
     justify-content: space-evenly;
 }
 .modal-tab{
-    width: 25%;
     text-align: center;
+    position: relative;
 }
 .modal-tab h3:hover{
     color: #ff3f40;
     cursor: pointer;
 }
 .modal-tab-header{
-    text-decoration: underline;
+    margin-bottom: 0;
 }
 #modal-body-content{
-    padding: 0 30px 10px 30px;
+    padding: 20px 30px 10px 30px;
     overflow: auto;
 }
 #modal-tab-text{
@@ -230,13 +230,22 @@ button{
     display: flex;
     justify-content: space-evenly;
 }
+.product-tabs{
+    position: relative;
+}
 .product-list-items{
-    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.product-list-items:hover{
+    color: #ff3f40;
 }
 .product-pics {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 230px 230px 230px 230px;
     justify-content: space-between;
+    min-height: 510px;
 }
 .product-images {
     height: 225px;
@@ -277,11 +286,10 @@ button{
     margin-top: 0;
     color: #928c88;
     font-style: italic;
-    text-decoration: underline;
-    text-decoration-color: #928c88;
 }
 .team-networks-links:hover{
     text-decoration: none;
+    color: #ff3f40;
 }
 .animation:after{
     content: "";
@@ -305,7 +313,7 @@ button{
     display: flex;
 }
 .name{
-    width: 88%;
+    width: 100%;
 }
 .team-photo{
     width: 110px;
@@ -313,21 +321,20 @@ button{
 }
 .team-photo-how{
     position: relative;
-}
-.team-photo-how *{
     margin-right: 15px;
 }
-.team-photo-how div{
+.team-photo-how .name{
     position: absolute;
     bottom: 0;
     background: black;
     color: #f6f2f1;
     margin-bottom: 5px;
-    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
 }
-.team-photo-how:hover div{
-    visibility: visible;
-    opacity: 0.7;
+.team-photo-how:hover .name{
+    opacity: 0.9;
 }
 .subscribe{
     background-image: url("assets/subscribe-background.jpg");
