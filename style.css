@@ -240,19 +240,16 @@ button{
 .product-list-items:hover{
     color: #ff3f40;
 }
-.product-pics {
+#product-pics {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 230px 230px 230px 230px;
     justify-content: space-between;
-    min-height: 510px;
 }
 .product-images {
     height: 225px;
     width: 225px;
-}
-.product-pics img {
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 .team-upper{
     width: 400px;
@@ -407,7 +404,7 @@ button{
     height: 35px;
 }
 #contacts-email{
-    width: 41%;
+    width: 40%;
     height: 35px;
     margin-left: 10%;
 }

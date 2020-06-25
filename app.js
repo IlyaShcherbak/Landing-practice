@@ -95,6 +95,7 @@ const tabPrintTemplate = document.getElementById('product-list-print-template');
 const tabWebTemplate = document.getElementById('product-list-web-template');
 const tabUserInterface = document.getElementById('product-list-user-interface');
 const tabMockUp = document.getElementById('product-list-mock-up');
+const divPics = document.getElementById('product-pics');
 
 const img1 = document.getElementById('print-template-1');
 const img2 = document.getElementById('print-template-2');
@@ -122,6 +123,8 @@ tabAll.onclick = function(){
     img6.style.display = 'block';
     img7.style.display = 'block';
     img8.style.display = 'block';
+    divPics.style.gridTemplateColumns = '230px 230px 230px 230px';
+    divPics.style.justifyContent = 'space-between';
 };
 
 tabPrintTemplate.onclick = function(){
@@ -133,6 +136,8 @@ tabPrintTemplate.onclick = function(){
     img6.style.display = 'none';
     img7.style.display = 'none';
     img8.style.display = 'none';
+    divPics.style.gridTemplateColumns = '270px 270px';
+    divPics.style.justifyContent = 'space-evenly';
 };
 tabWebTemplate.onclick = function(){
     img1.style.display = 'none';
@@ -143,6 +148,8 @@ tabWebTemplate.onclick = function(){
     img6.style.display = 'none';
     img7.style.display = 'none';
     img8.style.display = 'none';
+    divPics.style.gridTemplateColumns = '270px 270px';
+    divPics.style.justifyContent = 'space-evenly';
 };
 tabUserInterface.onclick = function(){
     img1.style.display = 'none';
@@ -153,6 +160,8 @@ tabUserInterface.onclick = function(){
     img6.style.display = 'block';
     img7.style.display = 'none';
     img8.style.display = 'none';
+    divPics.style.gridTemplateColumns = '270px 270px';
+    divPics.style.justifyContent = 'space-evenly';
 };
 tabMockUp.onclick = function(){
     img1.style.display = 'none';
@@ -163,4 +172,6 @@ tabMockUp.onclick = function(){
     img6.style.display = 'none';
     img7.style.display = 'block';
     img8.style.display = 'block';
+    divPics.style.gridTemplateColumns = '270px 270px';
+    divPics.style.justifyContent = 'space-evenly';
 };
